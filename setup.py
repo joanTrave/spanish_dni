@@ -24,6 +24,6 @@ setup(
     install_requires=[],
     entry_points={},
     project_urls={
-        "Source": ""
+        "Source": "https://github.com/joanTrave/spanish_dni",
     }
 )
