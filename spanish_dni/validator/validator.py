@@ -3,7 +3,7 @@ import re
 from spanish_dni.constants import REGEXP
 from spanish_dni.control_digit import get_control_digit
 from spanish_dni.dni import DNI
-from spanish_dni.exceptions import NotValidDNIException
+from spanish_dni.validator.exceptions import NotValidDNIException
 
 
 def validate_dni(dni: str) -> DNI:

@@ -7,12 +7,12 @@ Can be installed via PiPI.
 pip install spanish-dni
 ```
 ## How to use it
+
 ```python3
 from typing import List
 from spanish_dni.dni import DNI
-from spanish_dni.exceptions import NotValidDNIException
+from spanish_dni.validator.exceptions import NotValidDNIException
 from spanish_dni.validator import validate_dni
-
 
 my_dnis: List[str] = [
     "23414538D",
@@ -21,7 +21,6 @@ my_dnis: List[str] = [
     "U2853959H",
     "23414538T",
 ]
-
 
 for dni in my_dnis:
     valid = True
