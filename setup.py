@@ -25,5 +25,5 @@ setup(
     entry_points={},
     project_urls={
         "Source": "https://github.com/joanTrave/spanish_dni",
-    }
+    },
 )
