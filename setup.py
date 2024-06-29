@@ -6,7 +6,7 @@ README = (pathlib.Path(__file__).resolve().parent / "README.md").read_text()
 
 setup(
     name="spanish-dni",
-    version="1.0.1",
+    version="1.0.2",
     description="Spanish DNI utilities for NIE/NIF",
     python_requires=">=3.8",
     long_description=README,
