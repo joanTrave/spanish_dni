@@ -6,7 +6,7 @@ README = (pathlib.Path(__file__).resolve().parent / "README.md").read_text()
 
 setup(
     name="spanish-dni",
-    version="1.0.2",
+    version="1.0.3",
     description="Spanish DNI utilities for NIE/NIF",
     python_requires=">=3.8",
     long_description=README,
@@ -19,7 +19,7 @@ setup(
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
     ],
-    packages=["spanish_dni"],
+    packages=["spanish_dni", "spanish_dni.generator", "spanish_dni.validator"],
     include_package_data=True,
     install_requires=[],
     entry_points={},
