@@ -14,3 +14,6 @@ class DNI:
     @classmethod
     def get_dni_type(cls, dni: str) -> DNITypes:
         return DNITypes.NIE if dni[0] in NIE_FIRST_DIGITS.keys() else DNITypes.NIF
+
+    def __str__(self):
+        return f"{self._number}{self._control_digit}"

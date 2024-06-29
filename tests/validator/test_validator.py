@@ -1,6 +1,6 @@
 import pytest
 
-from spanish_dni.exceptions import NotValidDNIException
+from spanish_dni.validator.exceptions import NotValidDNIException
 from spanish_dni.validator import validate_dni
 
 VALID_NIF: str = "23414538D"
