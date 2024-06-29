@@ -2,7 +2,7 @@ from spanish_dni.constants import CONTROL_DIGIT, DNITypes, NIE_FIRST_DIGITS
 from spanish_dni.dni import DNI
 
 
-def _normalize_nie(dni: str) -> str:
+def normalize_nie(dni: str) -> str:
     """
     :param dni: Validated DNI format
     :return: NIE normalized in NIF format
@@ -19,5 +19,5 @@ def get_control_digit(dni: str) -> str:
     :return: its control_digit
     """
     dni_number: str = dni[:8]
-    normalized_dni: str = _normalize_nie(dni_number)
+    normalized_dni: str = normalize_nie(dni_number)
     return CONTROL_DIGIT[int(normalized_dni) % 23]
